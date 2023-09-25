@@ -39,7 +39,7 @@ ul li a{
     font-size: 18px;
     position: relative;
 }
-a::before{
+ul li a::before{
     content: "";
     position: absolute;
     bottom: 0;

@@ -1,45 +1,57 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.home{
-   width: 100%;
-   color: white;
-   background: linear-gradient(to right, #243B55, #141E30); 
+
+.home {
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right, #243B55, #141E30);
 }
 
-.banner , .leftBanner ,.rightBanner{
+.banner,
+.leftBanner,
+.rightBanner {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 400px;
 }
-.banner{
+
+.banner {
     height: 500px;
     flex-wrap: wrap;
 }
-.leftBanner{
+
+.leftBanner {
     width: 40%;
-    padding-top: 80px;
     height: 100%;
     align-items: start;
     flex-direction: column;
 }
-.leftBanner h2 span{
-    color: #74ebd5 ;
+
+.leftBanner h2 span {
+    color: #74ebd5;
 }
-.leftBanner h1{
+
+.leftBanner h1 {
     font-size: 40px;
 }
-.leftBanner h2{
+
+.leftBanner h2 {
     font-size: 25px;
 }
- .leftBanner h2 , .leftBanner p , .leftBanner h3 , .leftBanner p {
+
+.leftBanner h2,
+.leftBanner p,
+.leftBanner h3,
+.leftBanner p {
     margin-bottom: 5px;
 }
-.email{
+
+.email {
     padding-bottom: 20px;
 }
 
@@ -51,16 +63,87 @@
     border-radius: 2px;
     margin: 40px 20px 0px 0px;
     padding: 8px 25px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.rightBanner{
-    width: 40%;
+
+.leftBanner .anchors .cv:hover,
+.leftBanner .anchors .hire:hover {
+    color: #243B55;
+}
+
+.leftBanner .anchors .cv:after,
+.leftBanner .anchors .hire:after {
+    content: "";
+    position: absolute;
+    top: 0;
     height: 100%;
-    padding-bottom: 50px;
+    z-index: -1;
+    width: 100%;
+    background-color: #a7d5cd;
+    transition: all 1s ease;
+}
+
+.leftBanner .anchors .cv:after {
+    left: -100%;
+}
+
+.leftBanner .anchors .hire:after {
+
+    right: -100%;
+}
+
+.leftBanner .anchors .cv:hover:after
+ {
+    left: 0;
     
 }
-.rightBanner img{
-    width: 90%;
+
+.leftBanner .anchors .hire:hover:after {
+    right: 0;
+}
+
+
+
+
+.rightBanner {
+    position: relative;
+    width: 40%;
+    z-index: 0;
     height: 100%;
+
+}
+
+.rightBanner img {
+    width: 70%;
+    height: 70%;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
     border-bottom: blur(8.2px);
+    animation: animate 8s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 30% 40% 70% / 30% 60% 80% 30%;
+    }
+
+    25% {
+        border-radius: 40% 60% 70% 30% / 60% 30% 40% 70%;
+    }
+
+    50% {
+        border-radius: 30% 60% 30% 60% / 70% 30% 60% 30%;
+    }
+
+    75% {
+        border-radius: 40% 40% 60% 30% / 50% 60% 40% 70%;
+    }
+
+    100% {
+        border-radius: 60% 30% 40% 70% / 30% 60% 80% 30%;
+    }
+
 }
