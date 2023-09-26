@@ -1,6 +1,9 @@
 import React from 'react'
-import pic1 from "./photo.jpg"
+import pic1 from "./bannerpic.png"
 import { Link } from 'react-router-dom'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import "./Home.css"
 
 function Home() {
@@ -19,6 +22,7 @@ function Home() {
               <Link className='cv' to="">Download CV</Link>
               <Link className='hire' to="">Hire Me Now!</Link>
             </div>
+
 
           </div>
           <div className='rightBanner'>
