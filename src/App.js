@@ -6,6 +6,7 @@ import Home from './Home/Home'
 import Contect from './Contact/Contect'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
+import MouseParticles from 'react-mouse-particles' 
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/contact' element={<Contect/>} />
     </Routes>
     <Footer/>
+    <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
     </BrowserRouter>
 
     </>
