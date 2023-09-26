@@ -34,6 +34,7 @@
 
 .leftBanner h2 span {
     color: #74ebd5;
+    /* margin-left: 10px; */
 }
 
 .leftBanner h1 {
@@ -42,6 +43,9 @@
 
 .leftBanner h2 {
     font-size: 25px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .leftBanner h2,
@@ -54,6 +58,15 @@
 .email {
     padding-bottom: 20px;
 }
+
+.leftBanner .anchors {
+    overflow: hidden; 
+    height: 50px;
+    display: flex;
+    align-items:start   ;
+    justify-content: center;
+}
+
 
 
 .cv{
