@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import TopicIcon from '@mui/icons-material/Topic';
+import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import AboutPic from "./Aboutpic.png"
 import "./About.css"
 function About() {
@@ -19,7 +21,7 @@ function About() {
           <div className='mainRight'>
             <div className='intro'>
               <div className='introBox'>
-                <h3></h3>
+                <h3><FaceRetouchingNaturalIcon/></h3>
                 <h3>Experience</h3>
                 <p>1 year</p>
               </div>

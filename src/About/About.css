@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,15 +6,15 @@
 
 .about {
     width: 100%;
-    padding: 10px 0px;
+    height: 90vh;
     color: white;
     background: linear-gradient(to right, #243B55, #141E30);
 }
 
 .aboutHeading {
+    padding: 20px 0px;
     width: 100%;
     text-align: center;
-    margin: 20px 0px;
 }
 
 .aboutMain,
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    
 }
 
 .mainLeft {
@@ -60,14 +60,16 @@
 }
 
 .mainRight {
-    width: 35%;
+    width: 37%;
     align-items: start;
     flex-direction: column;
 }
 
 .mainRight .intro {
+    width: 100%;
     margin-bottom: 20px;
     justify-content: space-between;
+  
 }
 
 .intro .introBox {
@@ -77,3 +79,4 @@
     border-radius: 5px;
     text-align: center;
 }
+
