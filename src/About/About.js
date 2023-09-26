@@ -3,6 +3,7 @@ import {Link} from "react-router-dom"
 import TopicIcon from '@mui/icons-material/Topic';
 import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import SupportIcon from '@mui/icons-material/Support';
 import AboutPic from "./Aboutpic.png"
 import "./About.css"
 function About() {
@@ -26,18 +27,20 @@ function About() {
                 <p>1 year</p>
               </div>
               <div className='introBox'>
-                <h3></h3>
+                <h3><WorkHistoryIcon /></h3>
                 <h3>Completed</h3>
                 <p> 20+ project</p>
               </div>
               <div className='introBox'>
-                <h3></h3>
+                <h3>< SupportIcon /></h3>
                 <h3>Support</h3>
                 <p>online 25/7</p>
               </div>
             </div>
             <p className='dec'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-            <Link to="">Download CV <TopicIcon/> </Link>
+            <div className='aboutcv'>
+            <Link to="">Download CV <span><TopicIcon/></span> </Link>
+            </div>
           </div>
         </div>
 

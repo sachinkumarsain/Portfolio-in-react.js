@@ -80,3 +80,61 @@
     text-align: center;
 }
 
+.aboutcv{
+    width: 40%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.aboutcv a{
+    padding: 6px 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    
+}
+.aboutcv a span{
+    margin-left: 5px;
+}
+.aboutcv a  span .css-i4bv87-MuiSvgIcon-root{
+    font-size: 22px;
+
+}
+
+.aboutcv a:after , .aboutcv a:before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: all 0.8s ease;
+    background-color: aliceblue;
+   
+   
+}
+.aboutcv a::before{
+    left: -50%;
+}
+.aboutcv a::after{
+    right: -50%;
+}
+
+.aboutcv a:hover{
+    color: #141E30;
+}
+.aboutcv a:hover:before{
+    left: 0;
+    
+}
+
+.aboutcv a:hover:after{
+    right: 0;
+    
+}
