@@ -36,7 +36,7 @@
 
 .mainLeft img {
     width: 70%;
-    position: relative;
+    /* position: relative; */
     height: 350px;
     z-index: 1;
     border-radius: 5px;

@@ -16,7 +16,7 @@ function About() {
         </div>
 
         <div className='aboutMain'>
-          <div className='mainLeft'>
+          <div className='mainLeft'>    
             <img src={AboutPic}></img>
             <div className='blob'>
               <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

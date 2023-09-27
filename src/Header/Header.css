@@ -147,3 +147,9 @@ font-size: 27px;
         padding: 1px 0px;
     }
 }
+
+@media all and (max-width:400px){
+     h1 a{
+        font-size:40px ;
+    }
+}

@@ -49,12 +49,16 @@
 form{
     width: 100%;
     flex-wrap: wrap;
+    
 }
 form input{
     width: 49%;
+    color: white;
     height: 32px;
     background-color: #172839;
     border: none;
+    outline: #06121e;
+    padding: 5px;
     box-shadow: 5px 5px 5px 5px  rgba(29, 49, 71 ,0.4)
 }
 form input:first-of-type{
@@ -68,10 +72,12 @@ form input:last-of-type{
 }
 form textarea {
     width: 100%;
+    color: white;  
     height: 100px;
     padding: 5px;
     background-color: #172839;
     border: none;
+    outline: #06121e;
     box-shadow: 5px 5px 5px 5px  rgba(29, 49, 71 ,0.4)
 }
 form button{

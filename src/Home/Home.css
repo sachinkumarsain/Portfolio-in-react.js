@@ -21,8 +21,9 @@
 }
 
 .banner {
-    height: 500px;
     flex-wrap: wrap;
+    height: 90vh;
+    background: linear-gradient(to right, #243B55, #141E30)
 }
 
 .leftBanner {
@@ -30,6 +31,7 @@
     height: 100%;
     align-items: start;
     flex-direction: column;
+    
 }
 
 .leftBanner h2 span {
@@ -162,4 +164,68 @@
         border-radius:60% 50% 50% 70% / 50% 60% 80% 50%;
     }
 
+}
+
+@media all and (max-width :1030px){
+
+    .leftBanner , .rightBanner{
+        width: 45%;
+    }
+
+}
+@media all and (max-width:870px){
+    .leftBanner , .rightBanner{
+        width: 48%;
+    }
+    .leftBanner h1{
+        font-size: 35px;
+    }
+    .rightBanner img{
+        width: 80%;
+    }
+
+}
+@media all and (max-width :720px){
+    .leftBanner ,.rightBanner{
+        width: 100%;
+        padding: 0px 10%;
+        height: 500px;
+    }
+    .leftBanner , .rightBanner{
+        background: linear-gradient(to right, #243B55, #141E30)
+    }
+    .rightBanner img{
+        width:60% ;
+        height: 90%;
+    }
+}
+
+@media all and (max-width :530px){
+    .rightBanner img{
+        width: 85%;
+        height: 95%;
+    }
+    .leftBanner , .rightBanner{
+        padding: 0px 6%;
+    }
+}
+
+@media all and (max-width :400px){
+    .rightBanner , .leftBanner{
+        padding: 0px 3%;
+    }
+
+    .leftBanner h1{
+        font-size: 28px;
+    }
+    .leftBanner p{
+        font-size: 15px;
+    }
+    .cv , .hire{
+        padding: 6px 17px;
+    }   
+    .rightBanner img{
+        width: 93%;
+        height: 80%;
+    }
 }
