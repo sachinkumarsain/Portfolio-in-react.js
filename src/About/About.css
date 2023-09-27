@@ -29,19 +29,46 @@
 
 .mainLeft {
     width: 35%;
+    height: 400px;
+    position: relative;
+    z-index: 0;
 }
 
 .mainLeft img {
     width: 70%;
-    height: 320px;
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 350px;
+    z-index: 1;
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2); */
     z-index: 2;
     /* border-bottom: blur(8.2px); */
-    animation: animate 8s ease-in-out infinite;
+    /* animation: animate 8s ease-in-out infinite; */
+}
+
+.mainLeft:before{
+    content: "";
+    position: absolute;
+    bottom: 8%;
+    left: 6%;
+    z-index: 3;
+    width: 60%;
+    height: 10%;
+    background: linear-gradient(to right, #243B55, #1d3147);;
+    filter: blur(6px);
+}
+ .mainLeft .blob{
+    width:80%;
+    height: 80%;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+  
+    
 }
 
 
-@keyframes animate {
+/* @keyframes animate {
     0% {
         border-radius: 60% 50% 60% 60% / 60% 60% 60% 50%;
     }
@@ -57,7 +84,7 @@
         border-radius: 60% 50% 60% 60% / 60% 60% 60% 50%;
     }
 
-}
+} */
 
 .mainRight {
     width: 37%;
