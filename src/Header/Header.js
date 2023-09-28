@@ -24,7 +24,7 @@ function Header() {
         <ul style={{top:menu ? "50px":"-100px"}}>
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/about"}>About</Link></li>
-            <li><Link to={"/service"}>Service</Link></li>
+            <li><Link to={"/portfolio"}>Portfolio</Link></li>
             <li><Link to={"/contact"}>Contact</Link></li>
         </ul>
 
