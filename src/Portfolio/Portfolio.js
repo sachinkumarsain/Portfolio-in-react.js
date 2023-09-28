@@ -8,7 +8,7 @@ import TestTyping from "./Test-Typing.png"
 function Portfolio() {
     return (
         <div className='portfolio'>
-            <div className='portfoliContent'>
+            <div className='portfolioContent'>
                 <div className='pfHeading'>
                     <h1>Portfolio</h1>
                     <p>Most recent Work</p>
