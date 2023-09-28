@@ -10,7 +10,7 @@ header{
 background: linear-gradient(to right, #243B55, #141E30); 
 
 }
-header , ul{
+header , .menuList{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,22 +24,22 @@ h1 a{
 h1 a span{
 color: #74ebd5;
 }
-ul{
+.menuList{
     justify-content: center;
     list-style: none;
 }
-ul li {
+.menuList li {
     margin: 0.5px;
     
 }
-ul li a{
+.menuList li a{
     padding:10px 20px;
     color:#cff2eb ;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-ul li a::before{
+.menuList li a::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -122,7 +122,7 @@ font-size: 27px;
     .menu ,.close{
         display: block;
     }
-    header ul{
+    header .menuList{
         position: absolute;
         flex-direction: column;
         top: 50px;
@@ -132,17 +132,17 @@ font-size: 27px;
         background-color: rgba(36, 59, 85, 0.8);
         
     }
-    header ul li {
+    header .menuList li {
         text-align: center;
         width: 100%;
         border-bottom: 1px solid  #74ebd5;
         
     }
-    header ul li:hover{
+    header .menuList li:hover{
         background-color:rgba(36, 59, 85, 0.6);
     }
     
-    header ul li a{
+    header .menuList li a{
         width: 100%;
         padding: 1px 0px;
     }

@@ -21,7 +21,7 @@ function Header() {
     <>
     <header>
         <h1><Link to={"/"}><span>S</span>achin</Link></h1>
-        <ul style={{top:menu ? "50px":"-100px"}}>
+        <ul className='menuList' style={{top:menu ? "50px":"-100px"}}>
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/about"}>About</Link></li>
             <li><Link to={"/portfolio"}>Portfolio</Link></li>
