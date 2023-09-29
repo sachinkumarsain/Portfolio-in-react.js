@@ -5,6 +5,7 @@ import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import SupportIcon from '@mui/icons-material/Support';
 import AboutPic from "./image3.png"
+import resume from "./Schin-Resume.pdf"
 import "./About.css"
 function About() {
   return (
@@ -67,7 +68,7 @@ function About() {
             </div>
             <p className='dec'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
             <div className='aboutcv'>
-              <Link to="">Download CV <span><TopicIcon /></span> </Link>
+              <a href={resume} download>Download CV <span><TopicIcon /></span> </a>
             </div>
           </div>
         </div>
