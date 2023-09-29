@@ -70,5 +70,12 @@
     height: 100%;
     border-radius: 5px;
 }
+.modal{
+    width: 400px;
+    height: 400px;
+}
+.wapper{
+    transition: all 1s ease;
+}
 
 
