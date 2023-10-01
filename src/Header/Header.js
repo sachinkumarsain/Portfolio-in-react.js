@@ -30,6 +30,7 @@ function Header() {
 
         {
           menu
+          
           ? <Link style={{animation:menu ?"":"close 5s linear 2s infinite alternate"}} onClick={handleClose}  className="close"  to=""><CloseIcon/></Link>
 
           :  <Link style={{animation:menu ?"menuicon 5s linear 2s infinite alternate":""}} onClick={handleMenu}  className="menu"  to=""><MenuIcon/></Link>

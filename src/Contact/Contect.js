@@ -16,7 +16,7 @@ function Contect() {
           <div className='contactOptions'>
             <div className='option'>
               <h2><HomeIcon/></h2>
-              <p >Lorem Ipsum is simply dummy text of the printing</p>
+              <p >Full Stack Learning A-20, Murtikala Colony Gopalpura Bypass, Tonk Rd, Jaipur, Rajasthan 302018</p>
             </div>
             <div className='option'>
               <h2><LocalPhoneIcon/></h2>
@@ -27,7 +27,7 @@ function Contect() {
               <p>sachinsain@gamil.com</p>
             </div>
           </div>
-          <h2>Send message</h2>
+          <h2 className='send'>Send message</h2>
         <form>
           <input className='name' placeholder=' Name' type='text'></input>
           <input className='email' placeholder='Email' type='text'></input>

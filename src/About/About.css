@@ -52,7 +52,7 @@
     bottom: 8%;
     left: 6%;
     z-index: 3;
-    width: 60%;
+    width: 60%;  
     height: 10%;
     background: linear-gradient(to right, #243B55, #1d3147);;
     filter: blur(6px);
