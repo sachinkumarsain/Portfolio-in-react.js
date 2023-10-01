@@ -8,61 +8,62 @@ import Modal from 'react-modal';
 
 function Portfolio() {
 
-    const [model, setModel] = useState(false);
+    // const [model, setModel] = useState(false);
 
-    const modalStyle = {
-        content: {
-            innerWidth: "50%",
-            innerHeight: "50%",
-            top: '50%',
-            left: '50%',
-            // right: 'auto',
-            // bottom: 'auto',
-            // marginRight: '-50%',
+    // const modalStyle = {
+    //     content: {
+    //         innerWidth: "50%",
+    //         innerHeight: "50%",
+    //         top: '50%',
+    //         left: '50%',
+    //         // right: 'auto',
+    //         // bottom: 'auto',
+    //         // marginRight: '-50%',
 
-            transform: 'translate(-50%, -50%)',
-        },
-    };
+    //         transform: 'translate(-50%, -50%)',
+    //     },
+    // };
 
 
-    function openModal() {
-        setModel(true)
-    }
+    // function openModal() {
+    //     setModel(true)
+    // }
 
-    function closeModal() {
-        setModel(false)
-    }
+    // function closeModal() {
+    //     setModel(false)
+    // }
 
     return (
-        // <div className='portfolio'>
-        //     <div className='portfolioContent'>
-        //         <div className='pfHeading'>
-        //             <h1>Portfolio</h1>
-        //             <p>Most recent Work</p>
-        //         </div>
-        //         <div className='productList'>
-        //             <ul>
-        //                 <li><Link to="">All</Link></li>
-        //                 <li><Link to="">Web</Link></li>
-        //                 <li><Link to="">App</Link></li>
-        //                 <li><Link to="">Design</Link></li>
-        //             </ul>
-        //         </div>   
-        //         <div className='projectTank'>
-        //             <div className='project'>
-        //                 <img src={eccomerce}></img>
-        //             </div>
-        //             <div className='project'>
-        //                 <img src={Bomber}></img>
-        //             </div>
-        //             <div className='project'>
-        //                 <img src={TestTyping}></img>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
+           
         <>
-            <div className='wapper'>
+
+        <div className='portfolio'>
+            <div className='projects'>
+                <div className='projectHeading'>
+                    <h3>Creative Portfolio</h3>
+                    <h1>Recent Work</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                </div>
+                <ul className='projectList'>
+                    <li><Link to="">All</Link></li>
+                    <li><Link to="">frontend</Link></li>
+                    <li><Link to="">Fullstack</Link></li>
+                </ul>
+                <div className='projects'>
+
+                </div>
+            </div>
+            <div className='skills'>
+
+            </div>
+        </div>
+
+
+
+
+
+
+            {/* <div className='wapper'>
                 <button onClick={openModal}>Open Modal</button>
 
                 <Modal
@@ -88,7 +89,7 @@ function Portfolio() {
 
                 </Modal>
 
-            </div>
+            </div> */}
 
         </>
     )
