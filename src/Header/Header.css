@@ -29,15 +29,18 @@ color: #74ebd5;
     list-style: none;
 }
 .menuList li {
-    margin: 0.5px;
+    margin: 2px;
+    
     
 }
 .menuList li a{
-    padding:10px 20px;
+    padding: 6px 16px;
+    margin: 2px;
     color:#cff2eb ;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+
 }
 .menuList li a::before{
     content: "";
@@ -48,9 +51,9 @@ color: #74ebd5;
     width: 0;
     transition: all 1s ease;
     background: linear-gradient(to right, #ACB6E5, #74ebd5);
-    border-radius: 5pxpx;
+    border-radius: 5px;
 }
-a:hover::before{
+.menuList li a:hover::before{
     width: 100%;
 }
 

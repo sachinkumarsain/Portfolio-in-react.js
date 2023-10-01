@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./Portfolio.css"
 // import eccomerce from "./eccomerce.png"
 // import Bomber from "./Bomber_Game.png"
 // import TestTyping from "./Test-Typing.png"
-import Modal from 'react-modal';
+// import Modal from 'react-modal';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import PortTypeWriter from './PortTypeWriter'
 
 function Portfolio() {
 
@@ -40,16 +42,16 @@ function Portfolio() {
         <div className='portfolio'>
             <div className='projects'>
                 <div className='projectHeading'>
-                    <h3>Creative Portfolio</h3>
-                    <h1>Recent Work</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <h3><PortTypeWriter/></h3>
+                    <h1>Recent Work <span>< FavoriteIcon/> </span></h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standardLorem  </p>
                 </div>
                 <ul className='projectList'>
                     <li><Link to="">All</Link></li>
                     <li><Link to="">frontend</Link></li>
                     <li><Link to="">Fullstack</Link></li>
                 </ul>
-                <div className='projects'>
+                <div className='projectTank'>
 
                 </div>
             </div>

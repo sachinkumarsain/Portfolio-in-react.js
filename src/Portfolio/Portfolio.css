@@ -5,77 +5,53 @@
 }
 .portfolio{
     width: 100%;
-    height: 100vh;
     color: white;
     background: linear-gradient(to right, #243B55, #141E30);
 }
-
-.portfolio , .portfolioContent  ,.productList {
+.projects{
+    width: 100%;
+    height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-   
-}
-.portfolioContent{
-    width: 60%;
-    height: 100%;
-    flex-direction: column;
-}
-
-.pfHeading {
-    width: 100%;
-    height: 20%;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 10%;
 }
-.pfHeading h1{
+.projectHeading{
+    width: 55%;
+    height: 30%;
+}
+
+.projectHeading h3{
+    font-size: 22px;
+    color: #FF0066;
+}
+.projectHeading h1{
     font-size: 50px;
+    margin-bottom:7px ;
 }
-
-.productList{
-    width: 100%;  
-    height: 10%; 
-
+.projectHeading h1 span .css-i4bv87-MuiSvgIcon-root{
+    color: #74ebd5;
+    font-size: 24px;
 }
-.productList ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    justify-content: center;
-}
-.productList ul li{
-    list-style: none;
-}
-.productList ul li a{
-    text-decoration: none;
-    color: white;
-    margin:0px 10px;
-    padding: 5px 19px ;
-    background-color: black;
-}
-.projectTank {
-    width: 80%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.project{
-    width: 45%;
-    height:40%;
-    margin: 10px;
-}
-.project img{
+.projectList{
     width: 100%;
-    height: 100%;
-    border-radius: 5px;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
 }
-.modal{
-    width: 400px;
-    height: 400px;
-}
-.wapper{
-    transition: all 1s ease;
+.projectList li a{
+    text-decoration: none;
+    padding: 5px 17px;
+    background-color:white;
+    color: #141E30;
+    margin: 2px;
 }
 
-
+.projectTank{
+    width: 100%;
+    height: 50%;
+}
