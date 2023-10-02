@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import "./Portfolio.css"
-// import eccomerce from "./eccomerce.png"
-// import Bomber from "./Bomber_Game.png"
-// import TestTyping from "./Test-Typing.png"
+import eccomerce from "./eccomerce.png"
+import Bomber from "./Bomber_Game.png"
+import TestTyping from "./Test-Typing.png"
 // import Modal from 'react-modal';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PortTypeWriter from './PortTypeWriter'
@@ -35,6 +35,14 @@ function Portfolio() {
     //     setModel(false)
     // }
 
+
+
+
+
+    const[all , setAll] = useState(false)
+    const[fullstack , setFullstack]=useState(false)
+    const[frontend , setFrontend]=useState(false)
+
     return (
            
         <>
@@ -52,6 +60,27 @@ function Portfolio() {
                     <li><Link to="">Fullstack</Link></li>
                 </ul>
                 <div className='projectTank'>
+                        <div className='allProject'>
+                            <div className='AP-project'>
+                               <div className='projectImage'>
+                                <img src={Bomber}></img>
+                               </div>
+                                <h2></h2>
+                            </div>
+                            <div className='AP-project'>
+                               <div className='projectImage'>
+                                <img src={eccomerce}></img>
+                               </div>
+                                <h2></h2>
+                            </div>
+                            <div className='AP-project'>
+                               <div className='projectImage'>
+                                <img src={TestTyping}></img>
+                               </div>
+                                <h2></h2>
+                            </div>
+                      
+                        </div>
 
                 </div>
             </div>
