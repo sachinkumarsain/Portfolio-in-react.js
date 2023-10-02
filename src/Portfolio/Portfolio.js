@@ -39,55 +39,96 @@ function Portfolio() {
 
 
 
-    const[all , setAll] = useState(false)
-    const[fullstack , setFullstack]=useState(false)
-    const[frontend , setFrontend]=useState(false)
+    const [all, setAll] = useState(true);
+    const [fullstack, setFullstack] = useState(false);
+    const [frontend, setFrontend] = useState(false);
+
+    function allProjects() {
+        setAll(true)
+        setFrontend(false)
+        setFullstack(false)
+    }
+    function frontendP() {
+        setFrontend(true)
+        setFullstack(false)
+        setAll(false)
+    }
+    function fullstackP(){
+        setFrontend(false)
+        setFullstack(true)
+        setAll(false)
+    }
 
     return (
-           
+
         <>
 
-        <div className='portfolio'>
-            <div className='projects'>
-                <div className='projectHeading'>
-                    <h3><PortTypeWriter/></h3>
-                    <h1>Recent Work <span>< FavoriteIcon/> </span></h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standardLorem  </p>
-                </div>
-                <ul className='projectList'>
-                    <li><Link to="">All</Link></li>
-                    <li><Link to="">frontend</Link></li>
-                    <li><Link to="">Fullstack</Link></li>
-                </ul>
-                <div className='projectTank'>
-                        <div className='allProject'>
-                            <div className='AP-project'>
-                               <div className='projectImage'>
-                                <img src={Bomber}></img>
-                               </div>
-                                <h2></h2>
+            <div className='portfolio'>
+                <div className='projects'>
+                    <div className='projectHeading'>
+                        <h3><PortTypeWriter /></h3>
+                        <h1>Recent Work <span>< FavoriteIcon /> </span></h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standardLorem  </p>
+                    </div>
+                    <ul className='projectList'>
+                        <li><Link onClick={allProjects} to="">All</Link></li>
+                        <li><Link onClick={frontendP} to="">frontend</Link></li>
+                        <li><Link onClick={fullstackP} to="">Fullstack</Link></li>
+                    </ul>
+                    <div className='projectTank'>
+                        <div style={{ display: all ? "flex" : "none" }} className='allProjects'>
+                            <div className='project'>
+                                <div className='projectImage'>
+                                    <Link to=""><img src={eccomerce}></img></Link>
+                                </div>
+                                <h2>Bomber man</h2>
                             </div>
-                            <div className='AP-project'>
-                               <div className='projectImage'>
-                                <img src={eccomerce}></img>
-                               </div>
-                                <h2></h2>
+                            <div className='project'>
+                                <div className='projectImage'>
+                                    <Link to=""><img src={TestTyping}></img></Link>
+                                </div>
+                                <h2>Eccomerce</h2>
                             </div>
-                            <div className='AP-project'>
-                               <div className='projectImage'>
-                                <img src={TestTyping}></img>
-                               </div>
-                                <h2></h2>
+                            <div className='project'>
+                                <div className='projectImage'>
+
+                                    <Link to=""><img src={Bomber}></img></Link>
+                                </div>
+                                <h2> Test Typing</h2>
                             </div>
-                      
+
                         </div>
+                        <div style={{ display: frontend ? "flex" : "none" }}  className='frontedProject'>
+                            <div className='project'>
+                                <div className='projectImage'>
+                                    <Link to=""><img src={TestTyping}></img></Link>
+                                </div>
+                                <h2>Test Typing</h2>
+                            </div>
+                            <div className='project'>
+                                <div className='projectImage'>
 
+                                    <Link to=""><img src={Bomber}></img></Link>
+                                </div>
+                                <h2> Bomber man</h2>
+                            </div>
+                        </div>
+                        <div style={{ display: fullstack ? "flex" : "none" }}  className='fullstackProject'>
+                            <div className='project'>
+                                <div className='projectImage'>
+                                    <Link to=""><img src={eccomerce}></img></Link>
+                                </div>
+                                <h2>Eccomerce</h2>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div className='skills'>
+                    
                 </div>
             </div>
-            <div className='skills'>
-
-            </div>
-        </div>
 
 
 
