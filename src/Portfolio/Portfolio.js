@@ -7,6 +7,7 @@ import TestTyping from "./Test-Typing.png"
 // import Modal from 'react-modal';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PortTypeWriter from './PortTypeWriter'
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 function Portfolio() {
 
@@ -53,7 +54,7 @@ function Portfolio() {
         setFullstack(false)
         setAll(false)
     }
-    function fullstackP(){
+    function fullstackP() {
         setFrontend(false)
         setFullstack(true)
         setAll(false)
@@ -98,7 +99,7 @@ function Portfolio() {
                             </div>
 
                         </div>
-                        <div style={{ display: frontend ? "flex" : "none" }}  className='frontedProject'>
+                        <div style={{ display: frontend ? "flex" : "none" }} className='frontedProject'>
                             <div className='project'>
                                 <div className='projectImage'>
                                     <Link to=""><img src={TestTyping}></img></Link>
@@ -113,7 +114,7 @@ function Portfolio() {
                                 <h2> Bomber man</h2>
                             </div>
                         </div>
-                        <div style={{ display: fullstack ? "flex" : "none" }}  className='fullstackProject'>
+                        <div style={{ display: fullstack ? "flex" : "none" }} className='fullstackProject'>
                             <div className='project'>
                                 <div className='projectImage'>
                                     <Link to=""><img src={eccomerce}></img></Link>
@@ -121,12 +122,24 @@ function Portfolio() {
                                 <h2>Eccomerce</h2>
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>
-                <div className='skills'>
-                    
+                <div className='skills' style={{ width: "100px", height: "100px" }}>
+                    <CircularProgressbar
+                        value={66}
+                        text={`${66}%`}
+                        background
+                        backgroundPadding={6}
+                        className='progresBar '
+                        styles={buildStyles({
+                            backgroundColor: "#3e98c7",
+                            textColor: "#fff",
+                            pathColor: "#fff",  
+                            trailColor: "transparent"     
+                         })}
+                    />    
                 </div>
             </div>
 
